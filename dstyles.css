@@ -1,0 +1,180 @@
+
+/* 🌟 Default styles (Desktop First Approach) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #a9334b;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background: #555;
+}
+
+/* Buttons */
+.buttons {
+    position: absolute;
+    right: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    background-color: #007BFF;
+}
+
+.buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Marquee */
+.marquee-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #a9334b;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-content img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* Poster Container */
+.container {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #a9334b; 
+    padding: 20px;
+    margin-top: 2px;
+}
+
+/* Poster */
+.poster {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.poster img {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: -100px;
+}
+
+/* 🌟 Mobile Friendly Styles */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Menu */
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Buttons */
+    .buttons {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .buttons a {
+        font-size: 16px;
+        padding: 8px;
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    /* Poster Container */
+    .container {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Contact Section */
+    .contact {
+        font-size: 14px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+}

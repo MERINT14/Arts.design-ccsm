@@ -1,0 +1,104 @@
+
+        /* 🌟 Default styles (Desktop First Approach) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #a9334b;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: #007BFF;
+}
+
+/* Marquee */
+marquee {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Content Container */
+.container {
+    width: 50%;
+    margin: 70px auto;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+/* Center Title */
+.container h1 {
+    text-align: center;
+}
+
+/* Justify Paragraph */
+.container p {
+    text-align: justify;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 40px;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* 🌟 Mobile Friendly Styles */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Content Container */
+    .container {
+        width: 90%;
+        margin: 40px auto;
+        padding: 10px;
+    }
+
+    /* Adjust Font Sizes */
+    .container h1 {
+        font-size: 22px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    /* Contact Section */
+    .contact {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
